@@ -1,10 +1,11 @@
 /* General */
 
+
 html {
     height: auto;
     width: 100%;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     background-color: #000;
     color: #C5C6C7;
     text-align: center;
@@ -15,7 +16,6 @@ html {
 
 .container_headings {
     font-size: 32px;
-    padding-top: 1%;
 }
 
 h3 {
@@ -36,7 +36,13 @@ header {
 .container_header_name {
     flex-direction: column;
     float: left;
-    line-height: 0.5;
+    line-height: 0.5
+}
+
+.container-nav {
+    flex-direction: row;
+    float: right;
+    margin-left: 70%;
 }
 
 header h1 {
@@ -58,16 +64,36 @@ header li, header a {
     text-decoration: none;  
 }
 
+/* Add nav hover options */
+
+header a:hover {
+    border-bottom: #00FCF1 2px solid;
+    padding-bottom: 1px;
+}
+
 /* Welcome Text */
 
 .container_welcome {
-    height: auto;
+    height: 750px;
     width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2.5%;
+    position: static;
+    background-image: url("../resources/pc_development_banner.jpeg");
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    z-index: 25%;
 }
 
-.container_welcome img {
+.welcome-message {
     width: 100%;
-    height: auto;
+    color: #00fff2;
+    opacity: 100%;
+    font-size: 4rem;
+    float: right;
+    background-color: #c5c6c72c;
+    height: 15%;
 }
 
 /* About Me Section */
@@ -75,8 +101,7 @@ header li, header a {
 .container_about-me {
     background-color: #1F2833;
     display: flex;
-    height: 500px;
-    position: relative;
+    height: 600px;
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -84,30 +109,51 @@ header li, header a {
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 0.5;
 }
 
-
-
 .container_about-me img {
-    border-radius: 25%;
+    border-radius: 100%;
     height: 20rem;
     width: auto;
-    float: left;
 }
 
 .about-me-text {
-    display: flex;
     flex-direction: column;
 }
 
 /* Skills */
 
 .container_skills {
+    margin-top: 2.5%;
     height: 400px;
     background-color: #1F2833;
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+figure {
+    width: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+figure img{
+    border-radius: 100px;
+    border: #00FCF1 solid 2px;
+    display: flex;
+    height: 20%;
+    width: auto;
+}
+
+figcaption {
+    display: flex;
 }
 
 /* Projects */
@@ -128,6 +174,7 @@ header li, header a {
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
+    line-height: 2;
 
 }
 
@@ -141,7 +188,7 @@ footer {
     margin-top: 1%;
 }
 
-footer diacv {
+footer div {
     float: right;
     color: #1F2833;
     margin-right: 5px;
@@ -154,6 +201,10 @@ footer diacv {
     align-content: center;
     justify-items: center;
     align-items: center;
+}
+
+footer img {
+    height: 50px;
 }
 
 footer nav {
