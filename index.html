@@ -32,21 +32,26 @@
         <!-- Enter JavaScript code to decide the time and message to show -->
         <section class="container_welcome">
             <!-- <img src="resources/pc_development_banner.jpeg" alt="welcome image of web development"> -->
-            <h2 class="welcome-message">Good Morning / Good Afternoon / Good Evening</h2>
+            <script src="js/greeting.js"></script>
         </section>
 
         <section class="container_about-me">
-            <h3 class="container_headings">About Me</h3>
+            <div class="container_headings">
+                <h4>About Me</h4>
+            </div>
+            <div class="container_about-me-data">
             <img src="resources/chris_about_me.jpeg" alt="Picture of Chris Fleet">
             <p class="about-me-text">My name is Chris Fleet and I'm learning to become full stack development. I've been practicing front-end since July 2020, and have been working on projects alongside the course.</p>
             <p class="about-me-text">You will find more information below on the skills that I am currently training on, and am keen to take on additional projects to further develop my skills. </p>
             <p class="about-me-text">I am a keen football fan, supporting Aston Villa Football Club and being involved in the running of a Sunday morning football team, Solihull Taps.</p>
             <p class="about-me-text">To find out more, <a href="#">click here</a></p>
+            </div>
         </section>
 
         <!-- Need to add in small logos for JavaScript, HTML, node.js, GitHub, CSS -->
-        <section class="container_skills">
-            <h3 class="container_headings">Skills</h3>
+        <section class="container_section">
+            <h4 class="container_headings">Skills</h4>
+            <div class="container_skill_logos">
             <figure>
                 <img src="resources/html.svg" alt="html logo">
                 <figcaption>HTML</figcaption>
@@ -71,29 +76,28 @@
                 <img src="resources/official-nodejs-logo-1388491.jpg" alt="nodejs logo">
                 <figcaption>NodeJS</figcaption>
             </figure>
+            </div>
             
         </section>
 
         <!-- Need to add in images and brief description of VinoClassico, Solihull Taps, and other projects -->
-        <section class="container_projects">
-            <h3 class="container_headings">Projects</h3>
-        </section>
+        <section class="container_section">
+            <div class="container_headings">
+                <h4>Projects</h4>
+                <p>These projects are a work in progress, and many more will be added!</p>
+            </div>
 
-        <!-- Add in contact form - name, email, comments, send -->
-        <section class="container_contact-me">
-            <h3 class="container_headings">Contact Me</h3>
-            <form action="/index.html" method="post">
-                <label for="name">Name: </label><input id="name" name="name" type="text" required>
-                <br>
 
-                <label for="email">E-Mail: </label><input id="email" name="email" type="text" required>
-                <br>
+            <figure>
+                <a href="https://chrisfleet1.github.io/SolihullTapsFC/" target="_blank"><img src="resources/solihull-taps-thumb.png" alt="solihull taps fc website"></a>
+                <figcaption>Solihull Taps FC Website</figcaption>
+            </figure>
 
-                <label for="comments">Comments: </label>
-                <input id="comments" name="comments" type="comments" required value="Enter your comments">
-                <br>
-                <input type="submit" value="Submit">
-            </form>
+            <figure>
+                <a href="https://chrisfleet1.github.io/WebstersWines/" target="_blank"><img src="resources/VinoClassico-thumb.png" alt="vino classico website"></a>
+                <figcaption>VinoClassico <br>Website</figcaption>
+            </figure>
+
         </section>
 
     </main>
@@ -102,13 +106,17 @@
 
         <div class="container_social-media">
             <ul>
-                <li><a href="#"><img src="resources/linkedin.svg">LinkedIn</a></li>
-                <li><a href="#"><img src="resources/twitter-twitter-bird-button-twitter-button-icon-444847.jpg">Twitter</a></li>
-                <li><a href="#"><img src="resources/instagram-logo-icon-instagram-gif-transparent-png-83657.jpg">Instagram</a></li>
+                <figure><a href="#"><img src="resources/linkedin.svg">LinkedIn</a></figure>
+                <figure><a href="#"><img src="resources/twitter-twitter-bird-button-twitter-button-icon-444847.jpg">Twitter</a></figure>
+                <figure><a href="#"><img src="resources/instagram-logo-icon-instagram-gif-transparent-png-83657.jpg">Instagram</a></figure>
             </ul>
         </div>
 
+        <!-- 
         <div class="copyright">Chris Fleet</div>
-
+        -->
+        
     </footer>
+
+    
 </html>
