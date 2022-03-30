@@ -12,6 +12,8 @@ html {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    justify-content: center;
+    justify-items: center;
 }
 
 .container_headings {
@@ -19,7 +21,10 @@ html {
     width: 100%;
     margin-bottom: 0;
     line-height: 0;
-    
+}
+
+.bounce {
+    position: absolute;
 }
 
 
@@ -62,21 +67,19 @@ header {
     border-bottom: #00FCF1 solid 5px;
     width: 100%;
     height: 100px;
-    margin-bottom: 1%;
-    display: flex;
     align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .container_header_name {
-    flex-direction: column;
+    line-height: 0.5;
     float: left;
-    line-height: 0.5
 }
 
 .container-nav {
-    flex-direction: row;
+    box-sizing: border-box;
     float: right;
-    margin-left: 70%;
 }
 
 header h1 {
@@ -88,7 +91,9 @@ header h2 {
 }
 
 header nav {
-    float: right;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 header li, header a {
@@ -102,7 +107,7 @@ header li, header a {
 
 header a:hover {
     border-bottom: #00FCF1 2px solid;
-    padding-bottom: 1px;
+    box-sizing: border-box;
 }
 
 /* Welcome Text */
@@ -206,31 +211,40 @@ header a:hover {
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
+    border:#C5C6C7 5px solid;
 }
 
-.container_headings p {
-    
+.project-img {
+    width: 100%;
+    height: 75%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 figure a {
-    margin-top: 5%;
-    width: 10%;
-    height: 80%;
+    width: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    
+    padding-right: 10%;
 }
+
 figure img{
-    border-radius: 100px;
     display: flex;
     height: 50%;
     width: auto;
+    border-radius: 0;
 }
 
 figcaption {
+    padding-top: 0;
+    margin-top: 0;
     display: flex;
+    line-height: 1.5;
 }
 
 /* Contact Me */
@@ -242,7 +256,6 @@ figcaption {
     margin-left: 2.5%;
     margin-right: 2.5%;
     line-height: 2;
-
 }
 
 .container_section label {
@@ -254,38 +267,41 @@ figcaption {
 /* Footer */
 
 footer {
-    width: 100%;
+    margin-top: 2.5%;
     height: 100px;
-    background-color: #C5C6C7;
-    margin-top: 1%;
-}
-
-footer div {
-    float: right;
-    color: #1F2833;
-    margin-right: 5px;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-}
-
-.container_social-media {
-    display: flex;
-    float: left;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 25%;
-    height: 100%;
+    width: 100%;
 }
 
 footer figure img {
     height: 40px;
-    flex-direction: column;
+    width: auto;
+    border-radius: 0;
 }
 
-footer figure {
+.media_images {
     display: inline-flex;
-    padding-right: 5px;
-    align-self: center;
-    justify-self: center;
+    padding-right: 0;
+    margin: 0;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+
+    .welcome-message {
+        font-size: 2rem;
+        float: right;
+        background-color: #c5c6c72c;
+        height: 15%;
+    }
+
+    .container_about-me-data img {
+        height: 10rem;
+    }
+}
+
+/* JS */
+
+.bounce{
+    font-size: 1.2em;
 }
