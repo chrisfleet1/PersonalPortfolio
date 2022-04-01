@@ -61,6 +61,25 @@ figcaption {
     display: flex;
 }
 
+/* Animation on welcome message */
+
+h3 {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 /* Header */
 
 header {
@@ -193,6 +212,7 @@ header a:hover {
     opacity: 0;
     transition: all 600ms cubic-bezier(0.62, 0.04, 0.3, 1.56);
     transition-delay: 100ms;
+    position: fixed;
   }
   nav ul {
     margin: 0;
@@ -706,7 +726,6 @@ footer figure img {
 - Add JavaScript element to scroll through the project images, especially on mobile queries
 - Make sure the projects images align / in sync
 - Improve the contact page
-- Add icon to put navigation into collapsible menu
 - Add METADATA to head of page
 
 */
