@@ -171,6 +171,7 @@ header a:hover {
     border-radius: 100%;
     height: 20rem;
     width: auto;
+    border
 }
 
 .about-me-text {
@@ -284,21 +285,130 @@ footer figure img {
     margin: 0;
 }
 
-/* Media Queries */
+/* MEDIA QUERIES */
 
 @media only screen and (max-width: 480px) {
 
+/* --- General --- */
+
+    h4 {
+        font-size: 28px;
+    }
+
+/* --- Header --- */
+    .container_header_name {
+        float: none;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    .container-nav {
+        float: none;
+    }
+
+    header li, header a {
+        font-size: 16px;
+        text-align: center;
+        justify-content: center;
+        float: none;
+
+    }
+
+/* -- Welcome Message -- */
+    .container_welcome {
+        height: 450px;
+        width: 100%;
+        background-size: cover;
+        background-position-x: center;
+        z-index: 25%;
+    }
+
     .welcome-message {
-        font-size: 2rem;
+        width: 100%;
+        color: #00fff2;
+        opacity: 100%;
+        font-size: 4rem;
         float: right;
         background-color: #c5c6c72c;
         height: 15%;
     }
 
+    h3 {
+        font-size: 30px;
+        color: #00FCF1;
+        text-transform: uppercase;
+        font-style: italic;
+        background-color: #c5c6c749;
+    }
+
+/* --- About Me --- */
+
     .container_about-me-data img {
         height: 10rem;
+        margin-top: 5%;
     }
+
+.about-me-text {
+    line-height: 1;
+    }
+
+/* --- Skills --- */
+
+.container_section {
+    margin-top: 2.5%;
+    height: 250px;
 }
+
+.container_skill_logos {
+    width: 100%;
+    display: flex;
+    height: 30%;   
+    padding-right: 0;
+    flex-wrap: wrap-reverse;
+    padding-top: 20%;
+}
+
+/* --- Projects --- */
+
+
+.project-img {
+    width: 100%;
+    height: 75%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-p {
+    visibility: hidden;
+}
+
+figure img{
+    height: 30%;
+}
+
+figcaption {
+    margin-top: 0;
+    font-size: 0.75rem;
+}
+
+/* --- Footer --- */
+
+footer figure img {
+    height: 20px;
+    width: auto;
+    border-radius: 0;
+}
+
+.media_images {
+    display: inline-flex;
+    padding-right: 10%;
+    margin: 0;
+}
+
 
 /* JS */
 

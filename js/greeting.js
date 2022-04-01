@@ -4,7 +4,7 @@ var greeting;
 
 if (hourNow > 18) {
     greeting = 'Good evening and welcome to my page!';
-} else if (hourNow > 12) {
+} else if (hourNow >= 12) {
     greeting = 'Good afternoon and welcome to my page!';
 } else if (hourNow > 0) {
     greeting = 'Good morning and welcome to my page!';
@@ -13,3 +13,4 @@ if (hourNow > 18) {
 }
 
 document.write('<h3>' + greeting + '</h3>');
+
